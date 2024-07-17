@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url("https://fonts.googleapis.com/css2?family=Emblema+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Emblema+One&family=Nova+Oval&display=swap");
+h1 {
+  font-family: "Emblema One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: xx-large;
+}
+P {
+  font-family: "Nova Oval", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-image: url("https://img.freepik.com/free-photo/view-illuminated-neon-gaming-keyboard-setup-controller_23-2149529357.jpg?size=626&ext=jpg");
+}
+
+#game-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.game {
+  display: flex;
+  justify-content: center;
+  border: 1px ridge #00000000;
+  align-items: center;
+  text-align: justify;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  justify-content: space-between;
+  box-shadow: #ccc;
+}
+.game img {
+  border-radius: 10px;
+}
+.game h2,
+h3 {
+  font-size: medium;
+  color: chartreuse;
+  font-family: "Nova Oval", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+#buy {
+  border-radius: 5px;
+  cursor: pointer;
+}
+#buy:hover {
+  color: blue;
+}
