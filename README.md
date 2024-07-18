@@ -77,17 +77,18 @@ https://phase-1-project-brown-seven.vercel.app/
 # Sachon's Game lounge
 
 ## Introduction 
-- for this web project I was working on a website in which the user is allowed to add a game into the application.
+- For this web project I was working on a website in which the user is allowed to add a game into the application.
+ 
+- This  application is very useful to user it can countless of games and without any drawbacks
 
-
-- One down fall for this application is that user is unable to purchase any of the games that are recommended but this will only be for the time birng changes will soon be implimented which will increase the user's interactiveness with the website. 
+- One downfall to this application is that it is not that much interactive with the user but changes will be implemented soon.
 
 ## requirements 
 For this Project ,I :
 
 - Implemented html,css,js,tailwind css
 
-- Fetched data from a db.json(that i created)
+- Fetched data from a db.json(that I created)
 
 ## Running the application locally
 
