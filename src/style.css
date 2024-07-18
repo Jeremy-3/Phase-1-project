@@ -583,6 +583,16 @@ video {
   line-height: 1.5rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -627,6 +637,7 @@ body {
 
 .game img {
   border-radius: 10px;
+  height: 8cm;
 }
 
 .game h2,
@@ -639,10 +650,33 @@ h3 {
 }
 
 #buy {
+  border: ridge black;
   border-radius: 5px;
   cursor: pointer;
 }
 
 #buy:hover {
   color: blue;
+}
+
+#form-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-input {
+  border: solid 1px black;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.form-input div {
+  padding: 5px;
+  color: blue;
+}
+
+.hover\:border-t-4:hover {
+  border-top-width: 4px;
 }
