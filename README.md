@@ -72,7 +72,7 @@ on your computer.
 
 - copy the URL from the URL bar.
 
-https://phase-1-project-brown-seven.vercel.app/
+https://phase-1-project-lemon.vercel.app/
 
 # Sachon's Game lounge
 
