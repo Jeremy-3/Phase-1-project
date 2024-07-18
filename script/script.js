@@ -20,7 +20,7 @@ function listen(element, event, callback) {
   return element.addEventListener(event, callback);
 }
 // getting all resourses
-const url = "https://phase1-backend.vercel.app/games";
+const url = "http://localhost:3000/games";
 
 fetch(url)
   .then((res) => res.json())
@@ -47,15 +47,23 @@ function createGame(game) {
 <h3>price :${game.price}</h3>
 </div>
 <div class ="btn">
-<button type="button" id="buy">GET YOURS TODAY</button>
-<div>
+ <button type="button" id="buy">GET YOURS TODAY</button>
+ <div>
 `;
   divcard.innerHTML = html;
   appendChild(divcard, list);
 }
 
 // posting a resourse(single game card)
-let form = select("#form");
+const form = select("#form");
+
+function handleMouseover(event) {
+  form.style.borderColor = "orange";
+}
+
+function handleMouseout(event) {
+  form.style.borderColor = "white";
+}
 
 function events(e) {
   //prevent form from reloading
@@ -86,4 +94,13 @@ function events(e) {
     .then((res) => res.json())
     .then((game) => console.log(game));
 }
+
+function handleKeydown(event) {
+  console.log("KEY PRESSED:", event.key);
+}
+
 listen(form, "submit", events);
+listen(form, "mouseover", handleMouseover);
+listen(form, "mouseout", handleMouseout);
+listen(form, "keydown", handleKeydown);
+
