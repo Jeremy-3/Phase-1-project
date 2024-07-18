@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @import url("https://fonts.googleapis.com/css2?family=Emblema+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Emblema+One&family=Nova+Oval&display=swap");
 h1 {
@@ -40,6 +39,7 @@ body {
 }
 .game img {
   border-radius: 10px;
+  height: 8cm; 
 }
 .game h2,
 h3 {
@@ -50,9 +50,25 @@ h3 {
   font-style: normal;
 }
 #buy {
+  border: ridge black;
   border-radius: 5px;
   cursor: pointer;
 }
 #buy:hover {
+  color: blue;
+}
+#form-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-input {
+  border: solid 1px black;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 5px;
+}
+.form-input div {
+  padding: 5px;
   color: blue;
 }
