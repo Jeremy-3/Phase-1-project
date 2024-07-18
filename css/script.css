@@ -40,6 +40,7 @@ body {
 .game img {
   border-radius: 10px;
   height: 8cm; 
+  width: 6cm;
 }
 .game h2,
 h3 {
@@ -62,13 +63,15 @@ h3 {
   flex-direction: column;
   align-items: center;
 }
-.form-input {
-  border: solid 1px black;
+#form-input {
+  padding:20px;
+  border:1px solid #ccc;
   border-radius: 5px;
-  text-align: center;
-  margin-top: 5px;
+  width:300px;
+  transition:border-color 0.3s ease-in-out;
 }
-.form-input div {
+#form-input div {
   padding: 5px;
   color: blue;
+  text-align: center;
 }

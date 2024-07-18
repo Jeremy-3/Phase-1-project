@@ -578,19 +578,9 @@ video {
   text-align: center;
 }
 
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .text-white {
@@ -638,6 +628,7 @@ body {
 .game img {
   border-radius: 10px;
   height: 8cm;
+  width: 6cm;
 }
 
 .game h2,
@@ -665,16 +656,18 @@ h3 {
   align-items: center;
 }
 
-.form-input {
-  border: solid 1px black;
+#form-input {
+  padding:20px;
+  border:1px solid #ccc;
   border-radius: 5px;
-  text-align: center;
-  margin-top: 5px;
+  width:300px;
+  transition:border-color 0.3s ease-in-out;
 }
 
-.form-input div {
+#form-input div {
   padding: 5px;
   color: blue;
+  text-align: center;
 }
 
 .hover\:border-t-4:hover {
