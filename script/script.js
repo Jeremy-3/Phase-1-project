@@ -19,7 +19,7 @@ function select(selector) {
 function listen(element, event, callback) {
   return element.addEventListener(event, callback);
 }
-
+// getting all resourses
 const url = "http://localhost:3000/games";
 
 fetch(url)
@@ -31,6 +31,7 @@ fetch(url)
   )
   .catch((error) => console.log("ERROR Unexpected Input"));
 
+// function to create a single game card
 function createGame(game) {
   const list = select("#game-list");
   const divcard = createAnElement("div");
@@ -52,3 +53,37 @@ function createGame(game) {
   divcard.innerHTML = html;
   appendChild(divcard, list);
 }
+
+// posting a resourse(single game card)
+let form = select("#form");
+
+function events(e) {
+  //prevent form from reloading
+  e.preventDefault();
+
+  // getting form inputs
+  let coverUrl = select("#cover").value;
+  let title = select("#title").value;
+  let amount = select("#price").value;
+
+  // creating object from form inputs
+  const formData = {
+    covers: coverUrl,
+    name: title,
+    price: amount,
+  };
+
+  // sending data to the server using fetch api
+  fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-type": "application/json",
+      Accept: "application/json",
+    },
+
+    body: JSON.stringify(formData),
+  })
+    .then((res) => res.json())
+    .then((game) => console.log(game));
+}
+listen(form, "submit", events);
