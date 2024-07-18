@@ -20,7 +20,7 @@ function listen(element, event, callback) {
   return element.addEventListener(event, callback);
 }
 // getting all resourses
-const url = "http://localhost:3000/games";
+const url = "https://phase1-backend.vercel.app/games";
 
 fetch(url)
   .then((res) => res.json())
