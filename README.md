@@ -87,7 +87,7 @@ https://phase-1-project-lemon.vercel.app/
   - focus
   - blur 
 
-- One downfall to this application is that it is not that much interactive with the user but changes will be implemented soon.
+- One downfall to this application is that it is not that much interactive with the user in which he/she cannot purchase the desired game but changes will be implemented soon.
 
 ## requirements 
 For this Project ,I :
