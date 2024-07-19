@@ -20,8 +20,7 @@ function listen(element, event, callback) {
   return element.addEventListener(event, callback);
 }
 // getting all resourses
-const url = "http://localhost:3000/games";
-
+const url = "https://phase1-backend.vercel.app/games";
 fetch(url)
   .then((res) => res.json())
   .then((games) =>
@@ -90,17 +89,16 @@ function events(e) {
 function handleKeydown(event) {
   console.log("KEY PRESSED:", event.key);
 }
-const inputs=select('input[type="text"]')
- 
-function handleFocus(event){
-    event.target.style.background="pink";
-}
-function handleBlur(event){
-  event.target.style.background="";
-}
+const inputs = select('input[type="text"]');
 
+function handleFocus(event) {
+  event.target.style.background = "pink";
+}
+function handleBlur(event) {
+  event.target.style.background = "";
+}
 
 listen(form, "submit", events);
 listen(form, "keydown", handleKeydown);
-listen(inputs,"focus",handleFocus)
-listen(inputs,"blur",handleBlur)
+listen(inputs, "focus", handleFocus);
+listen(inputs, "blur", handleBlur);
