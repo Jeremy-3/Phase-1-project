@@ -80,6 +80,12 @@ https://phase-1-project-lemon.vercel.app/
 - For this web project I was working on a website in which the user is allowed to add a game into the application.
  
 - This  application is very useful to user it can countless of games and without any drawbacks
+- The event listeners that have been applied to make it more interactive are
+
+  -  key down
+  - submit
+  - focus
+  - blur 
 
 - One downfall to this application is that it is not that much interactive with the user but changes will be implemented soon.
 
